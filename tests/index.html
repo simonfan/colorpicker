@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Module boilerplate</title>
+	
+	<!-- Set a script tag to define unit as FALSE, so that the demo page is run -->
+	<script type="text/javascript">
+		window.__unit = false;
+		window.__demo = true;
+	</script>
+
+	<script type="text/javascript" data-main="main.js" src="components/requirejs/require.js"></script>
+
+	
+	<style type="text/css">
+		#color-picker td {
+			width: 60px;
+			height: 60px;
+
+			opacity: 0;
+		}
+
+		#color-picker td:hover {
+			cursor: pointer;
+
+			opacity: 0.7;
+		}
+
+
+		#colorlist {
+			margin-top: 100px;
+		}
+
+		#colorlist li {
+			height: 40px;
+		}
+	</style>
+	
+</head>
+
+<body>	
+
+	<table id="color-picker">
+		<tr>
+			<td data-value="#425DA9" data-name="azul"></td>
+			<td data-value="#6B469B" data-name="roxo-claro"></td>
+			<td data-value="#632B80" data-name="roxo-escuro"></td>
+			<td data-value="#B72B83" data-name="magenta"></td>
+		</tr>
+		<tr>
+			<td data-value="#D72E27" data-name="vermelho-veludo"></td>
+			<td data-value="#F0552C" data-name="laranja-escuro"></td>
+			<td data-value="#F69139" data-name="laranja-claro"></td>
+			<td data-value="#FFC747" data-name="amarelo-ouro"></td>								
+		</tr>
+		<tr>
+			<td data-value="#FCE853" data-name="amarelo-claro"></td>
+			<td data-value="#BBCC46" data-name="verde-claro"></td>
+			<td data-value="#35833F" data-name="verde-escuro"></td>
+			<td data-value="#428C97" data-name="anil"></td>
+		</tr>
+		<!--
+		<tr>
+			<td data-value="#8B4513" data-name="marrom"></td>
+			<td data-value="#000000" data-name="preto"></td>
+			<td data-value="#FFFFFF" data-name="branco"></td>
+			<td data-value="#pb" data-name="pb"></td>
+		</tr>
+		-->
+	</table>
+
+	<ul id="colorlist">
+		<li data-color="#425DA9"></li>
+		<li data-color="#6B469B"></li>
+		<li data-color="#632B80"></li>
+		<li data-color="#B72B83"></li>
+		<li data-color="#D72E27"></li>
+	</ul>
+
+	<br>
+	<a href="tests.html">Go to unit tests</a>
+	
+</body>
+
+</html>
